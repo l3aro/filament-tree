@@ -146,7 +146,7 @@ class FilamentTreeServiceProvider extends PackageServiceProvider
     protected function getMigrations(): array
     {
         return [
-            'create_filament-tree_table',
+            'create_tree_table',
         ];
     }
 }

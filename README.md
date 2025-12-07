@@ -5,8 +5,6 @@
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/l3aro/filament-tree/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/l3aro/filament-tree/actions?query=workflow%3A"Fix+PHP+code+styling"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/l3aro/filament-tree.svg?style=flat-square)](https://packagist.org/packages/l3aro/filament-tree)
 
-
-
 This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
 
 ## Installation
@@ -46,8 +44,9 @@ return [
 ## Usage
 
 ```php
-$filamentTree = new l3aro\FilamentTree();
-echo $filamentTree->echoPhrase('Hello, l3aro!');
+use l3aro\FilamentTree\Facades\FilamentTree;
+
+echo FilamentTree::echoPhrase('Hello, l3aro!');
 ```
 
 ## Testing
