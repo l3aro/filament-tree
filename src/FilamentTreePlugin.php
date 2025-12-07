@@ -1,15 +1,15 @@
 <?php
 
-namespace VendorName\Skeleton;
+namespace l3aro\FilamentTree;
 
 use Filament\Contracts\Plugin;
 use Filament\Panel;
 
-class SkeletonPlugin implements Plugin
+class FilamentTreePlugin implements Plugin
 {
     public function getId(): string
     {
-        return 'skeleton';
+        return 'filament-tree';
     }
 
     public function register(Panel $panel): void

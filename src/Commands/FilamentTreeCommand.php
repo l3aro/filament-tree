@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace l3aro\FilamentTree\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class FilamentTreeCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'filament-tree';
 
     public $description = 'My command';
 
