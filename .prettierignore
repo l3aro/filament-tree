@@ -1,0 +1,20 @@
+# Dependencies
+node_modules/
+vendor/
+
+# Build outputs
+dist/
+build/
+
+# Config files that shouldn't be formatted
+tailwind.config.cjs
+postcss.config.cjs
+*.config.*
+
+# Lock files
+package-lock.json
+composer.lock
+
+# Other
+.phpunit.result.cache
+.phpstan.result.cache

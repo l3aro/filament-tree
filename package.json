@@ -7,11 +7,14 @@
         "build:styles": "npx tailwindcss -i resources/css/index.css -o resources/dist/filament-tree.css --postcss --minify && npm run purge",
         "build:scripts": "node bin/build.js",
         "purge": "filament-purge -i resources/dist/filament-tree.css -o resources/dist/filament-tree.css -v 3.x",
+        "format": "prettier --write ./resources/",
+        "format:check": "prettier --check ./resources/",
         "dev": "npm-run-all --parallel dev:*",
         "build": "npm-run-all build:*"
     },
     "devDependencies": {
         "@awcodes/filament-plugin-purge": "^1.1.1",
+        "@shufo/prettier-plugin-blade": "^1.16.1",
         "@tailwindcss/forms": "^0.5.4",
         "@tailwindcss/typography": "^0.5.9",
         "autoprefixer": "^10.4.14",
