@@ -65,12 +65,12 @@ class FilamentTreeServiceProvider extends PackageServiceProvider
         // Asset Registration
         FilamentAsset::register(
             $this->getAssets(),
-            $this->getAssetPackageName()
+            $this->getAssetPackageName(),
         );
 
         FilamentAsset::registerScriptData(
             $this->getScriptData(),
-            $this->getAssetPackageName()
+            $this->getAssetPackageName(),
         );
 
         // Icon Registration
@@ -86,7 +86,7 @@ class FilamentTreeServiceProvider extends PackageServiceProvider
         }
 
         // Testing
-        Testable::mixin(new TestsFilamentTree);
+        Testable::mixin(new TestsFilamentTree());
     }
 
     protected function getAssetPackageName(): ?string
